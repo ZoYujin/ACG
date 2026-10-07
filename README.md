@@ -47,7 +47,7 @@ component and applies the remaining direction as guidance:
 ```math
 \Delta o_{\perp}
 = \Delta o
-- \operatorname{proj}_{o_{\mathrm{L}}}(\Delta o),
+- \mathrm{proj}_{o_{\mathrm{L}}}(\Delta o),
 \qquad
 o_{\mathrm{ACG}}
 = o_{\mathrm{VL}} + \gamma \Delta o_{\perp}.
