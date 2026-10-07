@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "acg-vlm"
+version = "0.1.0"
+description = "Reference implementation of Attention-Space Contrastive Guidance"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Yujin Jo"},
+  {name = "Sangyoon Bae"},
+  {name = "Taesup Kim"},
+]
+dependencies = [
+  "numpy<2",
+  "Pillow",
+  "torch",
+  "tqdm",
+  "transformers==4.37.2",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+include = ["acg*"]
